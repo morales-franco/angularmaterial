@@ -13,7 +13,7 @@ const SMALL_WIDTH_BREAKPOINT = 720;
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent implements OnInit {
-
+ //For Responsive app
   private mediaMatcher: MediaQueryList =
     matchMedia(`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`);
 
@@ -50,6 +50,7 @@ export class SidenavComponent implements OnInit {
     })
   }
 
+   //For Responsive app
   isScreenSmall(): boolean {
     return this.mediaMatcher.matches;
   }

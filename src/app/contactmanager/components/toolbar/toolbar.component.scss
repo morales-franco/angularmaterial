@@ -5,7 +5,7 @@ $iconWidth: 56px;
 }
 
 .sidenav-toggle {
-  display: none;
+  display: none; //Para que aparezca el icon menu en el toolbar cuando es una pantalla grande comentar esto
   padding: 0;
   margin: 8px;
   min-width: $iconWidth;

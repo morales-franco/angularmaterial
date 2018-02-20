@@ -6,6 +6,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 
+//Lazy load: Se cargan los modulos a medida que se solicitan
+//PathDemoModule#M
 const routes: Routes = [
   { path: 'contactmanager', loadChildren: './contactmanager/contactmanager.module#ContactmanagerModule' },
   { path: 'demo', loadChildren: './demo/demo.module#DemoModule' },
