@@ -11,6 +11,13 @@ import { DomSanitizer } from '@angular/platform-browser';
 })
 export class ContactmanagerAppComponent implements OnInit {
 
+  //MatIconRegistry permite asociar icons con un archico svg
+  //Define clases CSS fonts para mejor usabilidad
+  //Se debe registrar en el app.component
+  //Para prevenir ataques o vulnerabilidades utilizamos DomSanitizer
+
+
+
   constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIconSet(
       sanitizer.bypassSecurityTrustResourceUrl('assets/avatars.svg'));
